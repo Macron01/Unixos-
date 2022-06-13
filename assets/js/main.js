@@ -239,36 +239,58 @@
       once: true,
       mirror: false
     });
-      /**
-   * Animation on scroll
-   */
-    const OPTS = {
-  fill:           'none',
-  radius:         15,
-  strokeWidth:    { 50 : 0 },
-  scale:          { 0: 1 },
-  angle:          { 'rand(-35, -70)': 0 },
-  duration:       500,
-  left: 0,        top: 0,
-  easing: 'cubic.out'
+    
+//touch/click effect
+const OPTS = {
+    fill: 'none',
+    radius: 10,
+    strokeWidth: {
+        20: 0
+    },
+    scale: {
+        0: 1
+    },
+    angle: {
+        'rand(-35, -70)': 0
+    },
+    duration: 300,
+    left: 0,
+    top: 0,
+    easing: 'cubic.inout'
 };
 
 const circle1 = new mojs.Shape({
-  ...OPTS,
-  stroke:         'orange',
+    ...OPTS,
+    stroke: '#ce826b',
 });
 
-document.addEventListener( 'click', function (e) {
-  
-   circle1
-    .tune({ x: e.pageX, y: e.pageY  })
-    .replay();
-  
-  circle2
-    .tune({ x: e.pageX, y: e.pageY  })
-    .replay();
-  
+const circle2 = new mojs.Shape({
+    ...OPTS,
+    radius: {
+        0: 5
+    },
+    strokeWidth: {
+        10: 0
+    },
+    stroke: '#fcaf7e',
+    delay: 'rand(75, 150)'
 });
+
+document.addEventListener('click', function (e) {
+
+    circle1
+    .tune({
+        x: e.pageX, y: e.pageY
+    })
+    .replay();
+
+    circle2
+    .tune({
+        x: e.pageX, y: e.pageY
+    })
+    .replay();
+});
+
   });
 
 })()
