@@ -1,10 +1,3 @@
-/**
-* Template Name: Ninestars - v4.7.0
-* Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -1023,17 +1016,7 @@ section {
     transform: rotate(360deg);
   }
 }
-Contact .animated {
-  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
-}
-@media (max-width: 991px) {
-  #Contact {
-    height: calc(100vh - 72px);
-  }
-  #Contact .animated {
-    -webkit-animation: none;
-    animation: none;
-  }
+
 
 /*--------------------------------------------------------------
 # Footer
