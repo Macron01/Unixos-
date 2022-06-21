@@ -1023,6 +1023,17 @@ section {
     transform: rotate(360deg);
   }
 }
+Contact .animated {
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+@media (max-width: 991px) {
+  #Contact {
+    height: calc(100vh - 72px);
+  }
+  #Contact .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
 
 /*--------------------------------------------------------------
 # Footer
