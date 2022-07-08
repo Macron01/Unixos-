@@ -1,9 +1,3 @@
-/**
-* Template Name: Ninestars - v4.7.0
-* Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -261,7 +255,7 @@ const OPTS = {
 
 const circle1 = new mojs.Shape({
     ...OPTS,
-    stroke: '#ce826b',
+    stroke: '#6ACE8C',
 });
 
 const circle2 = new mojs.Shape({
@@ -272,7 +266,7 @@ const circle2 = new mojs.Shape({
     strokeWidth: {
         10: 0
     },
-    stroke: '#fcaf7e',
+    stroke: '#7DFC93',
     delay: 'rand(75, 150)'
 });
 
